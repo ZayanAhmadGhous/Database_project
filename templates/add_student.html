@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Student | Student Mental Health Tracker</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f9;
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        label {
+            font-weight: 600;
+            margin-top: 15px;
+            display: block;
+            color: #333;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+
+        input:focus, select:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            font-weight: bold;
+            border: none;
+            margin-top: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Register a New Student</h2>
+        <form method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" required>
+
+            <label for="gender">Gender:</label>
+            <select name="gender" id="gender" required>
+                <option value="">Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+
+            <label for="department">Department:</label>
+            <input type="text" name="department" id="department" required>
+
+            <label for="enrollment_year">Enrollment Year:</label>
+            <input type="number" name="enrollment_year" id="enrollment_year" required>
+
+            <input type="submit" value="Add Student">
+        </form>
+        <a href="/" class="back-link">← Back to Home</a>
+    </div>
+</body>
+</html>
